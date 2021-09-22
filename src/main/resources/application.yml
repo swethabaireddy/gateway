@@ -1,0 +1,10 @@
+zuul:
+  routes:
+    ItemService:
+      path: /item-service/**
+      url: http://localhost:8083
+    OrderService:
+      path: /order-service/**
+      url: http://localhost:8082
+server:
+  port: 8084
